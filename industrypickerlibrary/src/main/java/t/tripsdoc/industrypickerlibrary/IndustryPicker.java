@@ -36,7 +36,7 @@ import t.tripsdoc.industrypickerlibrary.listener.OnItemClickListener;
 public class IndustryPicker implements BottomSheetInteractionListener{
     private final Industry[] INDUSTRIES = {
             new Industry("1","Accounting"),
-            new Industry("2","Airlines\\/Aviation"),
+            new Industry("2","Airlines/Aviation"),
             new Industry("3","Alternative Dispute Resolution"),
             new Industry("4","Alternative Medicine"),
             new Industry("5","Animation"),
@@ -73,7 +73,7 @@ public class IndustryPicker implements BottomSheetInteractionListener{
             new Industry("33","Design"),
             new Industry("34","Education Management"),
             new Industry("35","E-Learning"),
-            new Industry("36","Electrical\\/Electronic Manufacturing"),
+            new Industry("36","Electrical/Electronic Manufacturing"),
             new Industry("37","Entertainment"),
             new Industry("38","Environmental Services"),
             new Industry("39","Events Services"),
@@ -143,9 +143,9 @@ public class IndustryPicker implements BottomSheetInteractionListener{
             new Industry("97","Non-Profit Organization Management"),
             new Industry("98","Oil & Energy"),
             new Industry("99","Online Media"),
-            new Industry("100","Outsourcing\\/Offshoring"),
+            new Industry("100","Outsourcing/Offshoring"),
 
-            new Industry("101","Package\\/Freight Delivery"),
+            new Industry("101","Package/Freight Delivery"),
             new Industry("102","Packaging and Containers"),
             new Industry("103","Paper & Forest Products"),
             new Industry("104","Performing Arts"),
@@ -154,7 +154,7 @@ public class IndustryPicker implements BottomSheetInteractionListener{
             new Industry("107","Photography"),
             new Industry("108","Plastics"),
             new Industry("109","Political Organization"),
-            new Industry("110","Primary\\/Secondary Education"),
+            new Industry("110","Primary/Secondary Education"),
 
             new Industry("111","Printing"),
             new Industry("112","Professional Training & Coaching"),
@@ -186,7 +186,7 @@ public class IndustryPicker implements BottomSheetInteractionListener{
             new Industry("136","Think Tanks"),
             new Industry("137","Tobacco"),
             new Industry("138","Translation and Localization"),
-            new Industry("139","Transportation\\/Trucking\\/Railroad"),
+            new Industry("139","Transportation/Trucking/Railroad"),
             new Industry("140","Utilities"),
 
             new Industry("141","Venture Capital & Private Equity"),
