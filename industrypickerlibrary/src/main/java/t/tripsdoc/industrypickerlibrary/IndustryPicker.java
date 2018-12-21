@@ -201,6 +201,7 @@ public class IndustryPicker implements BottomSheetInteractionListener{
     // Set Search
     public static final int SORT_BY_NONE = 0;
     public static final int SORT_BY_NAME = 1;
+    public static final int SORT_BY_ID = 2;
 
     private Context context;
     private int sortBy = SORT_BY_NONE;
@@ -238,6 +239,14 @@ public class IndustryPicker implements BottomSheetInteractionListener{
                 @Override
                 public int compare(Industry industry1, Industry industry2) {
                     return industry1.getName().trim().compareToIgnoreCase(industry2.getName().trim());
+                }
+            });
+        }
+        else if (sortBy == SORT_BY_ID) {
+            Collections.sort(industries, new Comparator<Industry>() {
+                @Override
+                public int compare(Industry industry1, Industry industry2) {
+                    return industry1.getId().trim().compareToIgnoreCase(industry2.getId().trim());
                 }
             });
         }
