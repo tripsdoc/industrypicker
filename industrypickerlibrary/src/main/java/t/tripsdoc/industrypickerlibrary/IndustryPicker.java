@@ -416,7 +416,9 @@ public class IndustryPicker implements BottomSheetInteractionListener{
     public static class IDComparator implements Comparator<Industry>{
         @Override
         public int compare(Industry industry, Industry nextIndustry) {
-            return industry.getId().compareToIgnoreCase(nextIndustry.getId());
+            Integer data1 = Integer.parseInt(industry.getId().toString());
+            Integer data2 = Integer.parseInt(nextIndustry.getId().toString());
+            return data1.compareTo(data2);
         }
     }
 
