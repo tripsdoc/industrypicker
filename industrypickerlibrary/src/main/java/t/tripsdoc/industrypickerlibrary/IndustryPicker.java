@@ -233,7 +233,7 @@ public class IndustryPicker implements BottomSheetInteractionListener{
     public static class Builder {
         private Context context;
         private String locale;
-        private int sortBy = SORT_BY_NONE;
+        private int sortBy = SORT_BY_NAME;
         private boolean canSearch = true;
         private OnIndustryPickerListener onIndustryPickerListener;
         private int style;
@@ -286,7 +286,6 @@ public class IndustryPicker implements BottomSheetInteractionListener{
         @Override
         public int compare(Industry industry, Industry nextIndustry) {
             return industry.getName().compareTo(nextIndustry.getName());
-            //return industry.getName().compareToIgnoreCase(nextIndustry.getName());
         }
     }
 }
