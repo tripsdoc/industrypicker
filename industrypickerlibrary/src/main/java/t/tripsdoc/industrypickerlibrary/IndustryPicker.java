@@ -46,7 +46,7 @@ public class IndustryPicker implements BottomSheetInteractionListener{
 
     private Context context;
     private String locale = LOCALE_DEFAULT;
-    private int sortBy = SORT_BY_NONE;
+    private int sortBy = SORT_BY_NAME;
     private OnIndustryPickerListener onIndustryPickerListener;
     private boolean canSearch = true;
 
@@ -59,8 +59,6 @@ public class IndustryPicker implements BottomSheetInteractionListener{
     private AlertDialog alertDialog;
     private BottomSheetInteractionListener bottomSheetInteractionListener;
     private Dialog dialog;
-
-
 
     private IndustryPicker(){}
 
@@ -94,7 +92,7 @@ public class IndustryPicker implements BottomSheetInteractionListener{
             Collections.sort(industries, new Comparator<Industry>() {
                 @Override
                 public int compare(Industry industry1, Industry industry2) {
-                    return industry1.getName().trim().compareToIgnoreCase(industry2.getName().trim());
+                    return industry1.getName().compareTo(industry2.getName());
                 }
             });
         }
@@ -287,7 +285,8 @@ public class IndustryPicker implements BottomSheetInteractionListener{
     public static class NameComparator implements Comparator<Industry> {
         @Override
         public int compare(Industry industry, Industry nextIndustry) {
-            return industry.getName().compareToIgnoreCase(nextIndustry.getName());
+            return industry.getName().compareTo(nextIndustry.getName());
+            //return industry.getName().compareToIgnoreCase(nextIndustry.getName());
         }
     }
 }

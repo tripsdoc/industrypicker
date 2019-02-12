@@ -3,6 +3,7 @@ package t.tripsdoc.industrypickerlibrary.language;
 import t.tripsdoc.industrypickerlibrary.Industry;
 
 public class th {
+
     public static final Industry[] INDUSTRIES = {
             new Industry("1","การบัญชี"),
             new Industry("2","สายการบิน / การบิน"),
