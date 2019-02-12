@@ -130,6 +130,7 @@ public class IndustryPicker implements BottomSheetInteractionListener{
 
     @Override public void setupRecyclerView(View sheetView) {
         searchResults = new ArrayList<>();
+        sortIndustries(industries);
         searchResults.addAll(industries);
         adapter = new IndustrPickerAdapter(sheetView.getContext(), searchResults,
                 new OnItemClickListener() {
